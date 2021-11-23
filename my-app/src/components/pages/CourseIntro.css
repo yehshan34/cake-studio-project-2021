@@ -1,0 +1,59 @@
+.course_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  /* display: table; */
+  table-layout: fixed;
+}
+
+.fourcourses_heading {
+  margin-top: 40px;
+  color: cadetblue;
+  font-size: 2.5rem;
+}
+.course_category a {
+  color: black !important;
+  text-decoration: none !important;
+}
+.course_category {
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.wagashi {
+  display: flex;
+  flex-direction: column;
+}
+.course-image {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+h3,
+.course-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  color: rgb(213, 141, 153);
+}
+
+.course-desc {
+  margin-top: 40px;
+  display: flex;
+  margin: 30px auto;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.8em;
+}
+
+.p_courseintro {
+  text-align: center;
+  margin: 20px 0;
+}

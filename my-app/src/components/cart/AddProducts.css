@@ -1,0 +1,12 @@
+.send-product-button {
+  padding: 10px 40px;
+  background-color: #3eabb3;
+  color: white;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}

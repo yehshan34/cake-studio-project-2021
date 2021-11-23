@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+.home {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+/* .courseintro {
+  background-image: url("./images/banner2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+} */
+.aboutus {
+  background-image: url("./images/banner0.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.cakeorder {
+  background-image: url("./images/banner4.png");
+  /* background-color: rgb(218, 203, 184); */
+  /* background-color: rgb(240, 231, 233); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  /* color: rgb(66, 62, 62); */
+  font-size: 100px;
+}
+.coursebooking {
+  background-image: url("./images/banner0.jpeg");
+  background-position: center !important;
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  color: #fff !important;
+  font-size: 80px;
+  padding-top: 150px;
+  height: 400px;
+}
+.courseintro {
+  background-image: url("./images/banner0.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+.customize_heading {
+  background-image: url("./images/banner4.png") !important;
+  background-position: center !important;
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  color: #fff !important;
+  font-size: 75px;
+  padding-top: 150px;
+  height: 400px;
+}
+.news {
+  background-image: url("./images/banner0.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+.workdisplay {
+  background-image: url("./images/banner4.png");
+  /* background-color: #d9e5e6; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* color: rgb(66, 62, 62); */
+  color: #fff;
+  font-size: 80px;
+  padding-top: 150px;
+  height: 400px;
+}
+
+.aboutus,
+.cakeorder,
+.contactus,
+.courseintro {
+  font-size: 80px;
+  padding-top: 150px;
+  height: 400px;
+}
+
+.news {
+  font-size: 80px;
+  padding-top: 150px;
+  height: 400px;
+  margin-bottom: 40px;
+}
+.account {
+  background-image: url("./images/banner4.png");
+  /* background-color: #d9e5e6; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* color: rgb(66, 62, 62); */
+  color: #fff;
+  font-size: 80px;
+  padding-top: 150px;
+  height: 400px;
+}
+
+.cartinfo {
+  background-image: url("./images/banner4.png");
+  /* background-color: #d9e5e6; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* color: rgb(66, 62, 62); */
+  color: #fff;
+  font-size: 80px;
+  padding-top: 150px;
+  height: 400px;
+}

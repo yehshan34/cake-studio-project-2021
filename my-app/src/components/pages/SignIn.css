@@ -1,0 +1,127 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.button_login {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  background: #2f8b92;
+  cursor: pointer;
+  margin: 30px auto;
+  border-radius: 20px;
+}
+
+.button_login:hover {
+  background: #1d5c61;
+}
+
+.login {
+  padding: 60px;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 520px;
+  min-height: 700px;
+  display: flex;
+  
+  background: #a3d1d4;
+
+  font-size: 24px;
+  letter-spacing: 1em;
+  text-align: center;
+}
+
+.loginContainer {
+  display: flex;
+
+}
+
+.login .loginContainer label {
+  color: white;
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.login .loginContainer input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.login .loginContainer .btnContainer {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.login .loginContainer .btnContainer p {
+  margin: 14px 0 0 0;
+  text-align: right;
+  color: #fff;
+  font-weight: bold;
+}
+
+.login .loginContainer .btnContainer p span {
+  color: yellow;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.login .loginContainer .btnContainer p span:hover {
+  color: red;
+}
+
+.login .loginContainer .errorMsg {
+  color: #b97bb1;
+  font-size: 16px;
+  letter-spacing: 0.3em;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgba(22, 24, 47, 1) 0%,
+    rgba(38, 20, 72, 0.9) 59%,
+    rgba(17, 27, 75, 0.9) 100%
+  );
+}
+
+.hero nav {
+  background: #ab6ba2;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero nav h2 {
+  color: #fff;
+}
+
+.hero nav button {
+  width: 86px;
+  padding: 8px 0;
+  background: #9a81cd;
+} */

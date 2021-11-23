@@ -1,0 +1,38 @@
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  padding: 30px;
+}
+.post-blog-heading {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px auto;
+}
+.upload-pic-button {
+  padding: 6px 16px;
+}
+.send-post-button {
+  padding: 10px 40px;
+  background-color: #3eabb3;
+  color: white;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.send-post-button:hover {
+  background-color: darkcyan;
+}
+.preview-img {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}

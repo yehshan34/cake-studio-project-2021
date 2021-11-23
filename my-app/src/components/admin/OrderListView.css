@@ -1,0 +1,156 @@
+/* Our Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.receipt_body {
+  height: 130vh;
+  background-color: #d3e1e1;
+  display: flex;
+  /* margin-top: 20px; */
+  /* background-color: rgb(177, 240, 227); */
+}
+
+/* The Receipt */
+.receipt_per {
+  width: 550px;
+  height: fit-content;
+  background-color: white;
+  /* border-radius: 30px; */
+  position: relative;
+  top: 5%;
+  left: 46%;
+  /* margin-top: 30px; -half height and width to center */
+  margin-left: -180px;
+  /* margin-top: 40px; */
+  box-shadow: 14px 14px 22px -18px;
+  padding: 20px;
+}
+
+/* Heading */
+.name_receipt {
+  text-transform: uppercase;
+  text-align: center;
+  color: #6c8b8e;
+  letter-spacing: 7px;
+  font-size: 1.8em;
+  margin-top: 10px;
+}
+
+/* Big thank */
+.greeting {
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #6f8d90;
+  margin: 15px 0;
+  letter-spacing: 1.2px;
+}
+
+/* Order info */
+.order_per p {
+  font-size: 13px;
+  color: #aaa;
+  padding-left: 10px;
+  letter-spacing: 0.7px;
+}
+
+/* Our line */
+hr {
+  border: 0.7px solid #ddd;
+  margin: 15px 0;
+}
+
+/* Order details */
+.details_orderlist {
+  padding-left: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  min-height: 100px;
+}
+
+.order_per h3 {
+  font-weight: 400;
+  color: #6c8b8e;
+  font-size: 1.5em;
+  margin-bottom: 25px;
+}
+
+/* Image and the info of the order */
+.product_orderlist {
+  float: left;
+  width: 85%;
+}
+
+.product_orderlist img {
+  width: 40%;
+  min-height: 110px;
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product_orderlist .info {
+  float: left;
+  margin-left: 15px;
+}
+
+.product_orderlist .info h4 {
+  color: #6f8d90;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.product_orderlist .info p {
+  font-size: 12px;
+  color: #aaa;
+  float: left;
+}
+
+/* Net price */
+.details_orderlist > p {
+  color: #6f8d90;
+  margin-top: 25px;
+  font-size: 15px;
+}
+
+/* Total price */
+.details_orderlist .totalprice .sub {
+  float: left;
+}
+.totalprice p {
+  padding-left: 10px;
+}
+
+.totalprice .sub,
+.totalprice .del {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 13px;
+}
+
+.totalprice span {
+  float: right;
+  margin-right: 17px;
+}
+
+.totalprice .tot {
+  color: #6f8d90;
+  margin-top: 25px;
+  font-size: 15px;
+}
+.totalprice .tot2 {
+  color: #6f8d90;
+  margin-top: 5px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
