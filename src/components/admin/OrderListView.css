@@ -1,7 +1,5 @@
-/* Our Font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 
-/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -13,22 +11,16 @@
   height: 130vh;
   background-color: #d3e1e1;
   display: flex;
-  /* margin-top: 20px; */
-  /* background-color: rgb(177, 240, 227); */
 }
 
-/* The Receipt */
 .receipt_per {
   width: 550px;
   height: fit-content;
   background-color: white;
-  /* border-radius: 30px; */
   position: relative;
   top: 5%;
   left: 46%;
-  /* margin-top: 30px; -half height and width to center */
   margin-left: -180px;
-  /* margin-top: 40px; */
   box-shadow: 14px 14px 22px -18px;
   padding: 20px;
 }

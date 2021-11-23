@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import {useHistory, useParams} from 'react-router-dom'
-import './AddEdit.css'
+import {useParams} from 'react-router-dom'
 import firebase from 'firebase'
-import {toast} from 'react-toastify'
 
 const initialState = {
     name: '',
@@ -15,10 +13,8 @@ const AddEdit = () => {
     const [data, setData] = useState({});
     const {name, email, contact } = state;
     
-    const history = useHistory();
-
     const {id} = useParams();
-
+    
     React.useEffect(() => {
         firebase
         .firestore()
@@ -28,10 +24,9 @@ const AddEdit = () => {
             const data = collectionSnapShot.docs.map(doc => {
                 return doc.data();
             });
-            // setUsers(data);
         });
     }, [id]);
-
+    
     useEffect(() => {
         if(id) {
             setData({...data[id]})

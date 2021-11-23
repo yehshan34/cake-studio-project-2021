@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 import './Navbar.css';
 import logoWhite from '../images/logo_white.png';
 import logoBlack from '../images/logo_black.png'
-
 import firebase from 'firebase';
 
 function NavbarAdmin() {

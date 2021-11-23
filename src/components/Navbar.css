@@ -8,7 +8,6 @@
     rgb(251, 251, 251) 0%,
     rgb(255, 255, 255) 100%
   );
-  /* background-color: transparent; */
   height: 80px;
   display: flex;
   justify-content: center !important;
@@ -44,9 +43,6 @@
 }
 
 .nav-menu {
-  /* display: grid;
-  grid-template-columns: repeat(8, auto); */
-  /* grid-gap: 10px; */
   display: flex;
   list-style: none;
   text-align: center;
@@ -164,9 +160,7 @@
 
   .navbar-logo {
     position: absolute;
-    /* top: 0; */
     left: 0;
-    /* transform: translate(25%, 50%); */
   }
 
   .menu-icon {

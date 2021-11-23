@@ -3,12 +3,10 @@ import '../App.css';
 import { Button } from './Button';
 import './BannerSection.css';
 import { Link } from 'react-router-dom';
-// import bannerVideo from '../videos/ollicake.mp4';
 
 function BannerSection() {
   return (
     <div className='banner-container'>
-      {/* <video src={bannerVideo} autoPlay loop muted /> */}
       <h1>韓式裱花 / 擠花蛋糕</h1>
       <p>讓幸福滋味定格在這一瞬間</p>
       <div className='banner-btns'>

@@ -23,22 +23,7 @@ function BookingPayment() {
     const [cardExpireMonth, setCardExpireMonth] = useState('');
     const [cardExpireYear, setCardExpireYear] = useState('');
     const [cardccv, setCardccv] = useState('');
-  
-    // const startDate = location.state.startDate;
-    // const endDate = location.state.endDate;
-    // const [email, setEmail] = useState('');
-    // const [seats, setSeats] = useState('');
-    // const [bookingDate, setBookingDate] = useState('');
-    // const [courses, setCourses] = useState('');
-    // const [bookedSeats, setBookedSeats] = useState([]);
     const paymentFunction = (e) => {
-        // if (cardName === "" || cardNumber === "" || cardExpireMonth==="" || cardExpireYear==="" || cardccv==="") {
-        //     Swal.fire({
-        //         icon: 'error',
-        //         title: '就差最後一步！',
-        //         text: '請填寫所有信用卡資訊'
-        //       })
-        // } else {
         var currentDate = new Date()
         var day = currentDate.getDate()
         var month = currentDate.getMonth() + 1
@@ -135,33 +120,23 @@ function BookingPayment() {
         <label>
         CVC
         <div  class="button--transparent modal-open button--info">
-        {/* <svg class="nc-icon glyph" ></svg>
-        <span class="visuallyhidden">什麼是 CVV?</span> */}
         </div>
         </label>
         <input className="input_payment" type="text" name="cc_cvc" placeholder="123" pattern="\\d*" minlength="3" maxlength="4"  value={cardccv} onChange={(e) => setCardccv(e.target.value)} />
         </div>
         </li>
         <li class="form-list__row form-list__row--agree">
-        {/* <label>
-        <input type="checkbox" name="save_cc" checked="checked" />
-        Save my card for future purchases
-        </label> */}
         </li>
         <li>
         </li>
         </ul>
         <button type="submit" class="button_paynow" onClick={paymentFunction}>確認付款</button>
         </form>
-        
-        </div> 
-       
         </div> 
         </div> 
-
+        </div> 
         </>
         )
     }
-    
     export default BookingPayment;
     

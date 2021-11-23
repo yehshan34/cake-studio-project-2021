@@ -36,8 +36,6 @@ export const AddProducts = () => {
     
     const handleAddProducts=(e)=>{
         e.preventDefault();
-        // console.log(productName, description, productPrice);
-        // console.log(image);
         const uploadTask=storage.ref(`product-images/${productImg.name}`).put(productImg);
         uploadTask.on('state_changed',snapshot=>{
             const progress = (snapshot.bytesTransferred/snapshot.totalBytes)*100

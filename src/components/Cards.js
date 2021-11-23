@@ -1,11 +1,9 @@
 import React from 'react';
-import './Cards.css';
 import CardItem from './CardItem';
 import cake0 from '../images/banner0.jpeg';
 import cake1 from '../images/banner1.jpeg';
 import cake2 from '../images/banner2.png';
 import cake3 from '../images/banner3.png';
-import { Link } from 'react-router-dom';
 
 function Cards() {
   return (

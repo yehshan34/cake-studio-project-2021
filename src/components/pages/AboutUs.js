@@ -3,7 +3,6 @@ import '../../App.css';
 import Footer from '../Footer';
 import InfoSection from '../InfoSection';
 import { homeObjOne, homeObjThree, homeObjTwo } from '../InfoSection/Data';
-import './AboutUs.css';
 import Navbar from './../Navbar';
 
 

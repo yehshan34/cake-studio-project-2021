@@ -3,10 +3,7 @@ import {Link} from 'react-router-dom';
 import { Button } from './Button';
 import './Navbar.css';
 import logoWhite from '../images/logo_white.png';
-
 import firebase from 'firebase';
-import { Menu } from 'semantic-ui-react';
-
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
@@ -71,11 +68,6 @@ function Navbar() {
         訂購蛋糕
         </Link>
         </li>
-        {/* <li className='nav-item'>
-        <Link to='/customize' className='nav-links' onClick={closeMobileMenu}>
-        來玩客製
-        </Link>
-        </li> */}
         <li className='nav-item'>
         <Link to='/workdisplay' className='nav-links' onClick={closeMobileMenu}>
         學生作品
@@ -130,9 +122,6 @@ function Navbar() {
         </Link>
         </li>
         <li className='nav-item'>
-        {/* <Link to='/customize' className='nav-links' onClick={closeMobileMenu}>
-        來玩客製
-        </Link> */}
         </li>
         <li className='nav-item'>
         <Link to='/workdisplay' className='nav-links' onClick={closeMobileMenu}>

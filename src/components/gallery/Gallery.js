@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import Column from './Column';
 import { Fragment } from 'react';
 
-// getColumns Hook
 const getColumns = (imgarr, col) => {
 
     let images = []

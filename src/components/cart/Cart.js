@@ -52,7 +52,6 @@ export const Cart = () => {
     }
     
     const user = GetCurrentUser();
-    // console.log(user);
     
     // state of cart products
     const [cartProducts, setCartProducts]=useState([]);
@@ -104,7 +103,6 @@ export const Cart = () => {
     
     // cart product increase function
     const cartProductIncrease=(cartProduct)=>{
-        // console.log(cartProduct);
         Product=cartProduct;
         Product.qty=Product.qty+1;
         Product.TotalProductPrice=Product.qty*Product.productPrice;

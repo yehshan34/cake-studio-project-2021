@@ -7,63 +7,60 @@ import firebase from 'firebase';
 import './Modal.css';
 toast.configure();
 
-    export const Modal = ({totalPrice,totalQty,hideModal}) => {
+export const Modal = ({totalPrice,totalQty,hideModal}) => {
+    const history = useHistory();
+    const [receiver, setReceiver]=useState('');
+    const [cell, setCell]=useState(null);
+    const [residentialAddress, setResidentialAddress]=useState('');
+    const [cartPrice]=useState(totalPrice);
+    const [cartQty]=useState(totalQty);
+    const handleCloseModal=()=>{
+        hideModal();
+    }
     
-        const history = useHistory();
-        const [receiver, setReceiver]=useState('');
-        const [cell, setCell]=useState(null);
-        const [residentialAddress, setResidentialAddress]=useState('');
-        const [cartPrice]=useState(totalPrice);
-        const [cartQty]=useState(totalQty);
-        const [cartData, setCartData] = useState('');
-        
-        const handleCloseModal=()=>{
-            hideModal();
+    const handleCashOnDelivery=async(e)=>{
+        e.preventDefault();
+        const email = auth.currentUser.email;
+        const userData = await fs.collection('users').doc(email).get();
+        const cartData = await fs.collection('Cart ' + email).get();
+        const docref = fs.collection('orders').doc();
+        docref.set({
+            ID: docref.id,
+            createdAt: firebase.firestore.Timestamp.now(),
+            Name: userData.data().FullName,
+            Email: userData.data().Email,
+            CartPrice: cartPrice,
+            CartQty: cartQty,
+        });
+        docref.collection('Buyer-Personal-Info').add({
+            Name: userData.data().FullName,
+            Receiver: receiver,
+            Email: userData.data().Email,
+            CellNo: cell,
+            ResidentialAddress: residentialAddress,
+            CartPrice: cartPrice,
+            CartQty: cartQty,
+            createdAt: firebase.firestore.Timestamp.now(),
+        })
+        for(var snap of cartData.docs){
+            var data = snap.data();
+            data.ID = snap.id;
+            fs.collection('orders').doc(docref.id).collection('Buyer-Cart').add(data);
+            fs.collection('Cart ' + email).doc(snap.id).delete();
         }
         
-        const handleCashOnDelivery=async(e)=>{
-            e.preventDefault();
-            const email = auth.currentUser.email;
-            const userData = await fs.collection('users').doc(email).get();
-            const cartData = await fs.collection('Cart ' + email).get();
-            const docref = fs.collection('orders').doc();
-            docref.set({
-                ID: docref.id,
-                createdAt: firebase.firestore.Timestamp.now(),
-                Name: userData.data().FullName,
-                Email: userData.data().Email,
-                CartPrice: cartPrice,
-                CartQty: cartQty,
-            });
-            docref.collection('Buyer-Personal-Info').add({
-                Name: userData.data().FullName,
-                Receiver: receiver,
-                Email: userData.data().Email,
-                CellNo: cell,
-                ResidentialAddress: residentialAddress,
-                CartPrice: cartPrice,
-                CartQty: cartQty,
-                createdAt: firebase.firestore.Timestamp.now(),
-            })
-            for(var snap of cartData.docs){
-                var data = snap.data();
-                data.ID = snap.id;
-                fs.collection('orders').doc(docref.id).collection('Buyer-Cart').add(data);
-                fs.collection('Cart ' + email).doc(snap.id).delete();
-            }
-            
-            hideModal();
-            history.push('/homeproduct');
-            toast.success('此訂單已成功下訂，歡迎繼續購買', {
-                position: 'top-right',
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: false,
-                draggable: false,
-                progress: undefined,
-            });
-        }
+        hideModal();
+        history.push('/homeproduct');
+        toast.success('此訂單已成功下訂，歡迎繼續購買', {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            progress: undefined,
+        });
+    }
     return (
         <div className='shade-area'>
         <div className='modal-container'>
@@ -85,7 +82,7 @@ toast.configure();
         required onChange={(e)=>setResidentialAddress(e.target.value)}
         value={residentialAddress}
         />
-         <br></br>
+        <br></br>
         <label>會員用戶信箱</label>
         <input type="text" className='form-control' readOnly
         required value={auth.currentUser.email}

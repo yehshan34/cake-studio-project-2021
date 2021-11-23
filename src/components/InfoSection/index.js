@@ -1,5 +1,4 @@
 import React from 'react';
-// import {Link } from "react-router-dom";
 import { Button } from './ButtonElements';
 import { InfoContainer, InfoWrapper, InfoRow, 
     Column1, Column2, TextWrapper, TopLine, Heading, 

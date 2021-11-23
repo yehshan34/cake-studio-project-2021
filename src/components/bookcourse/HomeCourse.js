@@ -1,14 +1,12 @@
-import React,{ useState, useEffect }  from 'react';
+import React,{ useState}  from 'react';
 import firebase from 'firebase';
-import { Link, useHistory, useLocation } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 import Navbar from '../Navbar';
 import './HomeCourse.css';
-import { NavbarSub } from '../cart/NavbarSub';
 import Footer from '../Footer';
 
 export const HomeCourse = (props) => {
     const history = useHistory();
-    const location = useLocation();
     const [courseData, setCourseData] = useState([]);
     React.useEffect(() => {
         firebase
@@ -82,8 +80,6 @@ export const HomeCourse = (props) => {
                         )})
                     }
                     <Footer />
-                    {/* <button className="booking_button" onClick={() => history.push({ pathname: "/details", state: { coursename: data.courseName, description: data.description, actorname: data.data.actorname, directorname: data.data.directorname, releasedate: data.data.releasedate, startDate: data.data.startDate } })}>查看課程資訊</button> */}
-                    
                     </>
                     )
                 }

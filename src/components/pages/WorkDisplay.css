@@ -36,15 +36,12 @@ header {
 
 .mainimg {
   position: absolute;
-  /* border-top-right-radius: 12px; */
-  /* left: -50%; */
   width: 100%;
 }
 
 .actions {
   position: absolute;
   bottom: 0px;
-  /* width: 100%; */
   padding: 10px;
   background: white;
   display: flex;
@@ -78,7 +75,6 @@ header {
   display: block;
   position: absolute;
   right: 0;
-  /* background: white; */
   padding: 10px;
   border-radius: 0px 10px 0px 10px;
   box-shadow: 0 0 3px 0 #000000a1;

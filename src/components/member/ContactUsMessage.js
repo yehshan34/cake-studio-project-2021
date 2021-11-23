@@ -1,8 +1,6 @@
 import React from 'react'
 import NavbarAdmin from '../NavbarAdmin';
 import 'firebase/firestore';
-import { Link } from 'react-router-dom';
-import { toast, ToastContainer } from 'react-toastify';
 import firebase from 'firebase';
 
 function ContactUsMessage() {
@@ -20,7 +18,7 @@ function ContactUsMessage() {
             setForms(data);
         });
     }, []);
-
+    
     return (
         <>
         <NavbarAdmin />
@@ -53,6 +51,7 @@ function ContactUsMessage() {
             </div>
             </>
             )
-}
-
-export default ContactUsMessage
+        }
+        
+        export default ContactUsMessage
+        

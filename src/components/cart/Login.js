@@ -39,7 +39,7 @@ export const Login = () => {
         },[])
         return user;
     }
-
+    
     const [totalProducts, setTotalProducts]=useState(0);
     // getting cart products   
     useEffect(()=>{        
@@ -62,7 +62,6 @@ export const Login = () => {
     
     const handleLogin=(e)=>{
         e.preventDefault();
-        // console.log(email, password);
         auth.signInWithEmailAndPassword(email,password).then(()=>{
             setSuccessMsg('恭喜成功登入，系統將自動導入購物頁面。');
             setEmail('');
@@ -104,21 +103,17 @@ export const Login = () => {
                 <br></br>
                 <div className='error-msg'>{errorMsg}</div>                
                 </>}
-            <div className='actions_login'>
-            <span className="signup-action">還沒有帳號嗎？ 
-            <Link to="signup" className='signup-link'>   按此註冊新帳號</Link></span>
-            <button type="submit" className="action">登入</button>
-            </div>
-            </div>
-            </div> 
-            <div className="login-decoration">
-            
-            </div>
-            </form>
-            
-            
-            
-            
+                <div className='actions_login'>
+                <span className="signup-action">還沒有帳號嗎？ 
+                <Link to="signup" className='signup-link'>   按此註冊新帳號</Link></span>
+                <button type="submit" className="action">登入</button>
+                </div>
+                </div>
+                </div> 
+                <div className="login-decoration">
+                
+                </div>
+                </form>
                 </div>
                 </>
                 )

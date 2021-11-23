@@ -40,7 +40,6 @@ export const IndividualCartProduct = ({cartProduct,cartProductIncrease,cartProdu
             </div>
             </div>
             <div className='product-text title'>{cartProduct.productName}</div>
-            {/* <div className='product-text description'>{cartProduct.description}</div> */}
             <div className='product-text price'>NTD. {cartProduct.productPrice}</div>
             <span>數量</span>
             <div className='product-text quantity-box'>

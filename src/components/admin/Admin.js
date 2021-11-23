@@ -13,31 +13,8 @@ function Admin() {
     const [postTitle, setpostTitle] = React.useState('');
     const [postDesc, setpostDesc] = React.useState('');
     const [postTag, setpostTag] = React.useState('');
-    // const [postTime, setpostTime] = React.useState('');
-    // const [posts, setPosts] = React.useState([]);
-    // const [postName, setPostName] = React.useState('');
     const [postImage, setpostImage] = React.useState(null);
     const [isLoading, setIsLoading] = React.useState(false);
-    const [successMsg, setSuccessMsg]=useState('');
-    
-    // React.useEffect(() => {
-    //     firebase
-    //     .firestore()
-    //     .collection("posts")
-    //     .get()
-    //     .then((collectionSnapShot) => {
-    //         const data = collectionSnapShot.docs.map((doc) => {
-    //             return doc.data();
-    //         });
-    //         setPosts(data);
-    //     });
-    // }, []);
-    // const options = posts.map((post, index) => {
-    //     return {
-    //         text: post.postTag,
-    //         value: post.postTag,
-    //     }
-    // })
     
     const previewUrl = postImage ? URL.createObjectURL(postImage) : "https://react.semantic-ui.com/images/wireframe/image.png";
     
@@ -85,7 +62,6 @@ function Admin() {
         <Image src={previewUrl} className="preview-img"
         floated="left"
         />
-        {/* <Button className="upload-pic-button" basic as="label "htmlFor="post-image">上傳文章圖片</Button> */}
         <Form.Input className="upload-pic-button" type="file" id="post-image"  
         onChange={(e) => setpostImage(e.target.files[0])}
         />

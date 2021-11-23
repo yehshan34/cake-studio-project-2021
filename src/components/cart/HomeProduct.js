@@ -2,16 +2,12 @@ import React,{useState, useEffect} from 'react'
 import { NavbarSub } from './NavbarSub'
 import { Products } from './Products'
 import {auth,fs} from '../../utils/firebase'
-import Loading from './Loading';
 import Footer from '../Footer';
 import firebase from 'firebase';
 import Navbar from '../../components/Navbar';
 import Swal from 'sweetalert2'
 
 export const HomeProduct = (props) => {
-    
-    // const [loading, setLoading]= useState(true);
-    // const [products, setProducts] = React.useState([]);
     React.useEffect(() => {
         firebase
         .firestore()
@@ -60,7 +56,6 @@ export const HomeProduct = (props) => {
     }
     
     const user = GetCurrentUser();
-    // console.log(user);
     
     // state of products
     const [products, setProducts]=useState([]);
@@ -105,7 +100,6 @@ export const HomeProduct = (props) => {
     // add to cart
     const addToCart = (product)=>{
         if(email!==null){
-            // console.log(product);
             Product=product;
             Product['qty']=1;
             Product['TotalProductPrice']=Product.qty*Product.productPrice;
@@ -134,18 +128,13 @@ export const HomeProduct = (props) => {
         <NavbarSub user={user} totalProducts={totalProducts}/>           
         {products.length > 0 && (
             <>
-            
             <div className="menuList">
-            {/* <div className='pic-container'>Products</div> */}
-            {/* <div className='cake-pic' style={{ backgroundImage: `url(${products.url})` }}></div> */}
             <Products products={products} addToCart={addToCart} className="add-to-cart-button"/>
             </div>
-           
             </>
             )}
             {products.length < 1 && (
                 <div className='pic-container'>
-                    {/* <Loading /> */}
                 </div>
                 )}
                 <Footer />

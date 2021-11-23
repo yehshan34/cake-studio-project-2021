@@ -1,8 +1,7 @@
 import React from 'react'
 import firebase from 'firebase';
-import { useParams, Link } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import './OrderListView.css'
-import { Image } from 'semantic-ui-react';
 import NavbarAdmin from '../NavbarAdmin';
 function OrderListView() {
     const {orderID} = useParams();

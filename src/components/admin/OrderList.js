@@ -1,6 +1,5 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import NavbarAdmin from '../NavbarAdmin'
-import { auth, fs } from '../../utils/firebase';
 import firebase from 'firebase';
 import { useParams, Link } from 'react-router-dom';
 
@@ -42,48 +41,7 @@ function OrderList() {
             console.log(orderID);
         })
     }, []);
-    // .querySnapshot((collectionSnapShot)=> {
-    //     const data = collectionSnapShot.docs.map((docSnapShot)=>{
-    //         const id = docSnapShot.id;
-    //         return {...docSnapShot.data(), id };
-    //     });
-    //     setOrderIds(data)
-    //     console.log(data);
-    // });
-    
-    // console.log(orderIds);
-    // orderIds.forEach((orderId) => {
-    //     firebase
-    //     .firestore()
-    //     .collection("orders")
-    //     .doc(orderId)
-    //     .collection('Buyer-Cart')
-    //     .doc()
-    //     .get()
-    //     .then((collectionSnapShot) => {
-    //         const data = collectionSnapShot.docs.map(doc => {
-    //             return doc.data();
-    //         });
-    //         setOrders(data);
-    //     });
-    // });
-    
-    // React.useEffect(() => {
-    //     firebase
-    //     .firestore()
-    //     .collection("orders")
-    //     .doc()
-    //     .collection('Buyer-Cart')
-    //     .doc()
-    //     .get()
-    //     .then((collectionSnapShot) => {
-    //         const data = collectionSnapShot.docs?.map(doc => {
-    //             return doc.data();
-    //         });
-    //         setOrders(data);
-    //     });
-    // },[]);
-    
+
     return (
         <>
         <NavbarAdmin />

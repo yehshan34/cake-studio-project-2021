@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react';
 import firebase from 'firebase';
-import './Member.css'
+import './Member.css';
 import 'firebase/firestore';
 import NavbarAdmin from '../NavbarAdmin';
+import { toast} from 'react-toastify';
 import { Link } from 'react-router-dom';
-import { toast, ToastContainer } from 'react-toastify';
 
 function Member() {
     const [users, setUsers] = React.useState([]);
@@ -66,17 +66,15 @@ function Member() {
                 <td>{user.PhoneNumber}</td>
                 <td>{user.Birthday}</td>
                 <td>
-                {/* <Link to= {`/update/${user}`}>
+                <Link to= {`/update/${user}`}>
                 <button className="button_member button_edit">修改</button>
-                </Link> */}
-                
+                </Link>
                 <button className="button_member 
                 button_delete" onClick={()=> onDelete(user.Email)}>刪除
                 </button>
-                
-                {/* <Link to= {`/view/${user}`}>
+                <Link to= {`/view/${user}`}>
                 <button className="button_member button_view">查看</button>
-                </Link> */}
+                </Link>
                 </td>
                 </tr>
                 );

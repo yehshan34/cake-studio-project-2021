@@ -61,7 +61,6 @@ function BookingList() {
             return(
                 <tr key={key}>
                 <th scope='row'>{key + 1}</th>
-                {/* <td>{booking.createdAt?.toDate().toLocaleDateString()}</td> */}
                 <td>{booking.bookingDate}</td>
                 <td>{booking.courseName}<br/>(NTD ${booking.ticketCost})</td>
                 <td>{booking.name}</td>
@@ -70,17 +69,6 @@ function BookingList() {
                 <td>{booking.totalSeats} 位</td>
                 <td>{(booking.seatNames).join(', ')}</td>
                 <td>
-                {/* <Link to= {`/update/${booking}`}>
-                <button className="button_member button_edit">修改</button>
-                </Link> */}
-                
-                {/* <button className="button_member 
-                button_delete" onClick={()=> onDelete(booking)}>刪除
-                </button> */}
-                
-                {/* <Link to= {`/view/${booking}`}>
-                <button className="button_member button_view">查看</button>
-                </Link> */}
                 </td>
                 </tr>
                 );

@@ -32,13 +32,10 @@
 
 .cakeorder {
   background-image: url("./images/banner4.png");
-  /* background-color: rgb(218, 203, 184); */
-  /* background-color: rgb(240, 231, 233); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  /* color: rgb(66, 62, 62); */
   font-size: 100px;
 }
 .coursebooking {
@@ -50,6 +47,7 @@
   font-size: 80px;
   padding-top: 150px;
   height: 400px;
+  text-align: center;
 }
 .courseintro {
   background-image: url("./images/banner0.jpeg");
@@ -76,18 +74,18 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  text-align: center;
 }
 .workdisplay {
   background-image: url("./images/banner4.png");
-  /* background-color: #d9e5e6; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* color: rgb(66, 62, 62); */
   color: #fff;
   font-size: 80px;
   padding-top: 150px;
   height: 400px;
+  text-align: center;
 }
 
 .aboutus,
@@ -97,6 +95,7 @@
   font-size: 80px;
   padding-top: 150px;
   height: 400px;
+  text-align: center;
 }
 
 .news {
@@ -107,24 +106,21 @@
 }
 .account {
   background-image: url("./images/banner4.png");
-  /* background-color: #d9e5e6; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* color: rgb(66, 62, 62); */
   color: #fff;
   font-size: 80px;
   padding-top: 150px;
   height: 400px;
+  text-align: center;
 }
 
 .cartinfo {
   background-image: url("./images/banner4.png");
-  /* background-color: #d9e5e6; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* color: rgb(66, 62, 62); */
   color: #fff;
   font-size: 80px;
   padding-top: 150px;

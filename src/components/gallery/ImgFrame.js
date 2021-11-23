@@ -12,7 +12,6 @@ function ImgFrame({ src, h, author }) {
           <div className={show ? '' : 'hide'}>
             {author}
           </div>
-          {/* <but ton onClick={() => window.location = src}>點擊看全版</button> */}
         </div>
       </div>
     )
